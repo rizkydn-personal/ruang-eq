@@ -82,6 +82,8 @@ PDF memakai jsPDF, 4 halaman A4, teks/vector, hard gate Blob.size <= 5.000.000 b
 
 ## Verifikasi dan deploy
 
+`npm run build` menjalankan `verify:firebase-runtime` sebelum build Next. Pemeriksaan ini memuat Firebase Admin dan memverifikasi kunci/tanda tangan JWKS dengan `require(ESM)` dinonaktifkan, tanpa jaringan atau kredensial. Override `jwks-rsa@4.1.0 > jose@5.10.0` menjaga kompatibilitas CommonJS di runtime serverless; versi jose milik paket lain tidak diubah. Ini mengatasi [bug upstream #507](https://github.com/auth0/node-jwks-rsa/issues/507). Hapus override hanya setelah perbaikan upstream lulus pemeriksaan runtime ini.
+
 ```powershell
 npm run typecheck
 npm run lint
