@@ -25,6 +25,7 @@ import {
   type Attempt,
 } from "@/lib/assessment/engine";
 import { firebaseConfigured, getClientAuth } from "@/lib/firebase/client";
+import { readApiResponse } from "@/lib/api-response";
 type Saved = { attempt: Attempt; owner: string | null; dirty?: boolean };
 type Session = {
   attempt: Attempt | null;
@@ -131,10 +132,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         },
         ...(body ? { body: JSON.stringify(body) } : {}),
       });
-      const data = await res.json();
-      if (!res.ok)
-        throw new Error(data.error || "Permintaan gagal. Coba lagi.");
-      return data;
+      return readApiResponse<T>(res);
     },
     [],
   );

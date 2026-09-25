@@ -44,6 +44,23 @@ test("login and logout use accessible app confirmations", async ({ page }) => {
     page.getByRole("link", { name: "Buka akun saya" }),
   ).toBeVisible();
   await page.goto("/history");
+  await page.route("**/api/attempts", (route) =>
+    route.fulfill({ status: 502, body: "" }),
+  );
+  await page.getByRole("button", { name: "Muat ulang" }).click();
+  const historyError = page
+    .getByRole("alert")
+    .filter({ hasText: "Layanan penyimpanan" });
+  await expect(historyError).toContainText(
+    "Layanan penyimpanan sedang tidak tersedia",
+  );
+  await expect(page.getByText("Belum ada asesmen tersimpan.")).toHaveCount(0);
+  await page.unroute("**/api/attempts");
+  await page.getByRole("button", { name: "Coba lagi", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Belum ada asesmen tersimpan." }),
+  ).toBeVisible();
+  await expect(historyError).toHaveCount(0);
   await page.getByRole("button", { name: "Keluar dari akun" }).click();
   await expect(dialog).toHaveAccessibleName("Keluar dari akun?");
   await page.setViewportSize({ width: 360, height: 800 });
