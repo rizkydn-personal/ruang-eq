@@ -1,0 +1,407 @@
+{
+  "version": "eq-id-1.0.0",
+  "status": "draft_self_report",
+  "referencePeriod": "empat minggu terakhir",
+  "items": [
+    {
+      "id": "awareness-01",
+      "dimension": "awareness",
+      "text": "Saya memberi nama pada perasaan yang sedang saya alami.",
+      "reverse": false,
+      "rationale": "Pelabelan emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-02",
+      "dimension": "awareness",
+      "text": "Saya mengenali kejadian yang memicu perubahan suasana hati saya.",
+      "reverse": false,
+      "rationale": "Identifikasi pemicu",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-03",
+      "dimension": "awareness",
+      "text": "Saya memperhatikan tanda tubuh ketika saya mulai tegang.",
+      "reverse": false,
+      "rationale": "Kesadaran sinyal tubuh",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-04",
+      "dimension": "awareness",
+      "text": "Saya menyadari pengaruh perasaan saya terhadap cara berbicara.",
+      "reverse": false,
+      "rationale": "Kaitan emosi dan perilaku",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-05",
+      "dimension": "awareness",
+      "text": "Saya membedakan rasa kecewa dari rasa marah dalam diri saya.",
+      "reverse": false,
+      "rationale": "Diferensiasi emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-06",
+      "dimension": "awareness",
+      "text": "Sebelum mengambil keputusan, saya memperhatikan perasaan yang sedang memengaruhi saya.",
+      "reverse": false,
+      "rationale": "Kesadaran emosi dalam keputusan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-07",
+      "dimension": "awareness",
+      "text": "Setelah bereaksi kuat, saya menelusuri perasaan yang mendasarinya.",
+      "reverse": false,
+      "rationale": "Refleksi respons emosional",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-08",
+      "dimension": "awareness",
+      "text": "Saya mengenali kebutuhan pribadi di balik perasaan tidak nyaman.",
+      "reverse": false,
+      "rationale": "Kaitan kebutuhan dan emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-09",
+      "dimension": "awareness",
+      "text": "Saya baru menyadari bahwa saya kesal setelah melampiaskannya kepada orang lain.",
+      "reverse": true,
+      "rationale": "Keterlambatan mengenali emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "awareness-10",
+      "dimension": "awareness",
+      "text": "Ketika suasana hati berubah, saya kesulitan menjelaskan perasaan saya.",
+      "reverse": true,
+      "rationale": "Kesulitan pelabelan emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-01",
+      "dimension": "regulation",
+      "text": "Ketika kesal, saya memberi jeda sebelum membalas pesan.",
+      "reverse": false,
+      "rationale": "Jeda sebelum tindakan impulsif",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-02",
+      "dimension": "regulation",
+      "text": "Saat tegang, saya memakai cara sederhana untuk menenangkan tubuh.",
+      "reverse": false,
+      "rationale": "Strategi regulasi fisiologis",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-03",
+      "dimension": "regulation",
+      "text": "Saya menunda pembicaraan yang memanas sampai saya siap membahasnya.",
+      "reverse": false,
+      "rationale": "Pengaturan waktu respons",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-04",
+      "dimension": "regulation",
+      "text": "Setelah mengalami tekanan, saya meluangkan waktu untuk memulihkan diri.",
+      "reverse": false,
+      "rationale": "Pemulihan setelah stres",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-05",
+      "dimension": "regulation",
+      "text": "Ketika muncul dorongan untuk membentak, saya menurunkan nada suara.",
+      "reverse": false,
+      "rationale": "Modulasi ekspresi emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-06",
+      "dimension": "regulation",
+      "text": "Saat pikiran mengganggu berulang, saya mengarahkan perhatian pada kegiatan yang sedang dilakukan.",
+      "reverse": false,
+      "rationale": "Pengalihan perhatian terarah",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-07",
+      "dimension": "regulation",
+      "text": "Saya mengungkapkan rasa sedih dengan cara yang tidak menyakiti diri sendiri.",
+      "reverse": false,
+      "rationale": "Ekspresi emosi aman",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-08",
+      "dimension": "regulation",
+      "text": "Ketika rencana berubah mendadak, saya menenangkan diri sebelum menentukan tindakan.",
+      "reverse": false,
+      "rationale": "Fleksibilitas respons",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-09",
+      "dimension": "regulation",
+      "text": "Saat kesal, saya langsung bereaksi sebelum memikirkan akibatnya.",
+      "reverse": true,
+      "rationale": "Reaktivitas impulsif",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "regulation-10",
+      "dimension": "regulation",
+      "text": "Saya membawa kekesalan dari satu kejadian ke percakapan berikutnya.",
+      "reverse": true,
+      "rationale": "Kesulitan pemulihan emosi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-01",
+      "dimension": "motivation",
+      "text": "Saya mengerjakan langkah kecil menuju tujuan yang penting bagi saya.",
+      "reverse": false,
+      "rationale": "Tindakan menuju tujuan bermakna",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-02",
+      "dimension": "motivation",
+      "text": "Setelah rencana gagal, saya mencoba kembali dengan langkah yang bisa dilakukan.",
+      "reverse": false,
+      "rationale": "Memulai kembali setelah hambatan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-03",
+      "dimension": "motivation",
+      "text": "Saya mengingat alasan pribadi untuk meneruskan kegiatan yang sulit.",
+      "reverse": false,
+      "rationale": "Orientasi makna internal",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-04",
+      "dimension": "motivation",
+      "text": "Saya tetap menjalankan kegiatan yang bermakna meskipun tidak mendapat pujian.",
+      "reverse": false,
+      "rationale": "Persistensi tanpa penguatan eksternal",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-05",
+      "dimension": "motivation",
+      "text": "Ketika tugas terasa besar, saya membaginya menjadi langkah yang lebih kecil.",
+      "reverse": false,
+      "rationale": "Pengelolaan usaha",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-06",
+      "dimension": "motivation",
+      "text": "Saya menyesuaikan target dengan tenaga yang tersedia.",
+      "reverse": false,
+      "rationale": "Persistensi berkelanjutan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-07",
+      "dimension": "motivation",
+      "text": "Setelah tertunda, saya menentukan waktu untuk memulai lagi.",
+      "reverse": false,
+      "rationale": "Pemulihan komitmen",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-08",
+      "dimension": "motivation",
+      "text": "Saya mengakui kemajuan kecil dalam hal yang sedang saya pelajari.",
+      "reverse": false,
+      "rationale": "Penguatan intrinsik",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-09",
+      "dimension": "motivation",
+      "text": "Saya meninggalkan tujuan yang masih penting bagi saya setelah menemui hambatan kecil.",
+      "reverse": true,
+      "rationale": "Melepas tujuan akibat hambatan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "motivation-10",
+      "dimension": "motivation",
+      "text": "Saya menunggu dorongan orang lain untuk memulai kegiatan yang sebenarnya ingin saya lakukan.",
+      "reverse": true,
+      "rationale": "Ketergantungan dorongan eksternal",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-01",
+      "dimension": "empathy",
+      "text": "Saya mendengarkan cerita orang lain sampai selesai sebelum menanggapi.",
+      "reverse": false,
+      "rationale": "Mendengarkan pengalaman",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-02",
+      "dimension": "empathy",
+      "text": "Saya memeriksa apakah tebakan saya tentang perasaan orang lain sudah sesuai.",
+      "reverse": false,
+      "rationale": "Verifikasi pemahaman",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-03",
+      "dimension": "empathy",
+      "text": "Saat berbeda pandangan, saya mencoba memahami alasan orang lain.",
+      "reverse": false,
+      "rationale": "Pengambilan perspektif",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-04",
+      "dimension": "empathy",
+      "text": "Saya menanyakan dukungan yang dibutuhkan sebelum memberikan saran.",
+      "reverse": false,
+      "rationale": "Respons pada kebutuhan orang lain",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-05",
+      "dimension": "empathy",
+      "text": "Saya memperhatikan perubahan nada suara orang yang berbicara dengan saya.",
+      "reverse": false,
+      "rationale": "Perhatian pada petunjuk emosional",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-06",
+      "dimension": "empathy",
+      "text": "Saya mempertimbangkan situasi seseorang sebelum menilai tindakannya.",
+      "reverse": false,
+      "rationale": "Kontekstualisasi perilaku",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-07",
+      "dimension": "empathy",
+      "text": "Saya mengakui perasaan orang lain meskipun tidak setuju dengan pilihannya.",
+      "reverse": false,
+      "rationale": "Validasi tanpa persetujuan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-08",
+      "dimension": "empathy",
+      "text": "Jika cerita seseorang belum jelas, saya mengajukan pertanyaan untuk memahaminya.",
+      "reverse": false,
+      "rationale": "Klarifikasi pengalaman",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-09",
+      "dimension": "empathy",
+      "text": "Saya menganggap orang lain merasakan hal yang sama dengan saya tanpa memeriksanya.",
+      "reverse": true,
+      "rationale": "Asumsi perspektif",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "empathy-10",
+      "dimension": "empathy",
+      "text": "Saat orang bercerita tentang kesulitan, saya mengalihkan pembicaraan ke pengalaman saya sendiri.",
+      "reverse": true,
+      "rationale": "Pengalihan fokus mendengarkan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-01",
+      "dimension": "social",
+      "text": "Saya menyampaikan kebutuhan saya dengan kata-kata yang jelas.",
+      "reverse": false,
+      "rationale": "Komunikasi kebutuhan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-02",
+      "dimension": "social",
+      "text": "Saat berbeda pendapat, saya membahas masalah tanpa merendahkan orangnya.",
+      "reverse": false,
+      "rationale": "Konflik konstruktif",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-03",
+      "dimension": "social",
+      "text": "Saya menyampaikan batas ketika permintaan orang lain melebihi kemampuan saya.",
+      "reverse": false,
+      "rationale": "Asertivitas batas",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-04",
+      "dimension": "social",
+      "text": "Ketika ucapan saya menyakiti seseorang, saya mengakui bagian yang menjadi tanggung jawab saya.",
+      "reverse": false,
+      "rationale": "Perbaikan hubungan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-05",
+      "dimension": "social",
+      "text": "Saya memastikan pembagian tugas dipahami bersama ketika bekerja dengan orang lain.",
+      "reverse": false,
+      "rationale": "Koordinasi komunikasi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-06",
+      "dimension": "social",
+      "text": "Saya meminta penjelasan ketika pesan seseorang terasa membingungkan.",
+      "reverse": false,
+      "rationale": "Klarifikasi komunikasi",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-07",
+      "dimension": "social",
+      "text": "Saat ada ketegangan, saya mengajak mencari langkah yang bisa disepakati.",
+      "reverse": false,
+      "rationale": "Negosiasi konflik",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-08",
+      "dimension": "social",
+      "text": "Saya menyampaikan apresiasi atas tindakan spesifik orang lain.",
+      "reverse": false,
+      "rationale": "Pemeliharaan hubungan",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-09",
+      "dimension": "social",
+      "text": "Saya menyimpan keberatan sampai akhirnya muncul sebagai sindiran.",
+      "reverse": true,
+      "rationale": "Komunikasi kebutuhan tidak langsung",
+      "reviewStatus": "draft_self_report"
+    },
+    {
+      "id": "social-10",
+      "dimension": "social",
+      "text": "Saat berselisih, saya memotong pembicaraan sebelum orang lain selesai menjelaskan.",
+      "reverse": true,
+      "rationale": "Hambatan dialog",
+      "reviewStatus": "draft_self_report"
+    }
+  ]
+}

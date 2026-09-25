@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.npm-cache/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+*-debug.log
+.firebase/
+tmp/
+BRIEF-CODEX-WEB-TES-EQ.md
