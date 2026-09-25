@@ -746,6 +746,84 @@ legend {
 .chart-card h2 {
   font-size: 1.3rem;
 }
+.eq-radar {
+  margin: 20px 0 28px;
+}
+.eq-radar svg {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  height: auto;
+}
+.radar-grid {
+  fill: none;
+  stroke: #c4d7e2;
+  stroke-width: 1;
+}
+.radar-area {
+  fill: #0866b52b;
+  stroke: #0866b5;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.radar-point {
+  fill: #0866b5;
+  stroke: white;
+  stroke-width: 1.5;
+}
+.radar-label {
+  fill: #183645;
+  font-size: 17px;
+  font-weight: 700;
+}
+.radar-scale {
+  fill: #435f70;
+  font-size: 10px;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 3px;
+}
+.personal-insights {
+  padding: clamp(20px, 4vw, 40px);
+  border-top: 4px solid var(--blue);
+  margin: 36px 0;
+}
+.personal-insights h2 {
+  margin-top: 6px;
+}
+.personal-insights h3 {
+  margin-top: 28px;
+}
+.focus-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.focus-options button {
+  font-size: 0.85rem;
+}
+.personal-exercises {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 16px;
+}
+.personal-exercises li {
+  padding: 22px;
+  background: #edf5fa;
+  border-radius: 14px;
+}
+.personal-exercises p {
+  margin-bottom: 0;
+}
+.exercise-number {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0866b5;
+}
 .chart-row {
   margin: 24px 0;
 }

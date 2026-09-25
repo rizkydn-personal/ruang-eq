@@ -2,6 +2,53 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdir } from "node:fs/promises";
 import { newAttempt } from "../../lib/assessment/engine";
+import { items } from "../../lib/assessment/items";
+
+test("radar and practical exercises reflect the lowest EQ aspect", async ({
+  page,
+}) => {
+  const attempt = newAttempt();
+  attempt.responsesByItemId = Object.fromEntries(
+    items.map((item) => {
+      const directed = item.dimension === "regulation" ? 2 : 4;
+      return [item.id, item.reverse ? 6 - directed : directed];
+    }),
+  );
+  attempt.status = "completed";
+  attempt.completedAt = new Date().toISOString();
+  await page.goto("/");
+  await page.evaluate(
+    (a) =>
+      sessionStorage.setItem(
+        "ruang-eq-session-v1",
+        JSON.stringify({ attempt: a, owner: null }),
+      ),
+    attempt,
+  );
+  await page.goto("/result");
+  await expect(
+    page.getByRole("img", { name: /Grafik radar lima aspek EQ/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Latihan untuk Regulasi Diri" }),
+  ).toBeVisible();
+  await expect(page.locator(".personal-exercises li")).toHaveCount(2);
+  await expect(page.locator(".radar-area")).toHaveCount(1);
+  await mkdir("test-results/artifacts", { recursive: true });
+  for (const width of [360, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
+    await page.screenshot({
+      path: `test-results/artifacts/radar-${width}.png`,
+      fullPage: true,
+    });
+  }
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+});
 test("guest completes, refreshes, reviews, exports and clears without cloud requests", async ({
   page,
 }) => {
@@ -105,6 +152,13 @@ test("partial results, result reflow, 200 percent text and reduced motion", asyn
   await page.goto("/result");
   await expect(
     page.getByText("Hasil parsial.", { exact: false }),
+  ).toBeVisible();
+  await expect(page.locator(".radar-area")).toHaveCount(0);
+  await expect(page.locator(".radar-point")).toHaveCount(0);
+  await expect(
+    page.getByText("Data belum cukup untuk memilih latihan personal.", {
+      exact: false,
+    }),
   ).toBeVisible();
   await expect(
     page.getByText("Ringkasan indeks refleksi", { exact: true }),

@@ -6,6 +6,8 @@ import { score, type Attempt, type Result } from "@/lib/assessment/engine";
 import { disclaimer } from "@/lib/config/product";
 import { sevenDays } from "@/lib/assessment/interpretation-rules";
 import { download, fileName, reportModel } from "@/lib/export/report";
+import { EqRadar } from "./eq-radar";
+import { PersonalInsights } from "./personal-insights";
 export type Donation = { bank: string; number: string; holder: string };
 export function Results({
   attempt,
@@ -87,10 +89,13 @@ export function Results({
             Indeks jawaban 0–100. Semakin besar indeks, semakin sering perilaku
             terarah dilaporkan.
           </p>
-          {result.dimensions.map((d) => (
+          <EqRadar dimensions={result.dimensions} />
+          {result.dimensions.map((d, i) => (
             <div className="chart-row" key={d.id}>
               <div className="chart-label">
-                <span>{d.name}</span>
+                <span>
+                  {i + 1}. {d.name}
+                </span>
                 <strong>
                   {d.index === null
                     ? "Belum cukup"
@@ -185,6 +190,7 @@ export function Results({
           )}
         </aside>
       </div>
+      <PersonalInsights key={attempt.id} dimensions={result.dimensions} />
       <section className="result-details">
         <p className="eyebrow">Memahami jawaban Anda</p>
         <h2>Apa yang dapat Anda perhatikan?</h2>
